@@ -26,7 +26,7 @@
                             <li>Układy scalone</li>
                         </a>
                         <li class="dropdown">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=16 height=16 viewBox="0 0 32 32" {...props}>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=16 height=16 viewBox="0 0 32 32">
                                 <path d="M27.333 18c-0.368 0-0.667 0.299-0.667 0.667v12h-6.667v-9.333h-8v9.333h-6.667v-12.667c0-0.368-0.299-0.667-0.667-0.667s-0.667 0.299-0.667 0.667v14h9.333v-9.333h5.333v9.333h9.333v-13.333c0-0.368-0.299-0.667-0.667-0.667zM31.805 16.862l-15.333-15.333c-0.26-0.26-0.683-0.26-0.943 0l-15.333 15.333c-0.26 0.26-0.26 0.683 0 0.943s0.683 0.26 0.943 0l14.861-14.861 14.863 14.861c0.131 0.131 0.301 0.196 0.471 0.196 0.171 0 0.341-0.065 0.472-0.196 0.26-0.26 0.26-0.683 0-0.943zM21.333 4h4v4c0 0.368 0.299 0.667 0.667 0.667s0.667-0.299 0.667-0.667v-5.333h-5.333c-0.368 0-0.667 0.299-0.667 0.667s0.299 0.667 0.667 0.667z"></path>
                             </svg>
                             Mikrokontrolery
@@ -43,7 +43,7 @@
                             </ul>
                         </li>
                         <a href="lutowanie.html">   
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=16 height=16 viewBox="0 0 32 32" {...props}>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width=16 height=16 viewBox="0 0 32 32">
                                 <path d="M21.548 5.088c-0.436-0.451-1.162-0.451-1.613 0-0.436 0.436-0.436 1.162 0 1.596l8.177 8.177h-26.984c-0.629 0.001-1.129 0.501-1.129 1.13s0.5 1.145 1.129 1.145h26.984l-8.177 8.162c-0.436 0.451-0.436 1.178 0 1.613 0.451 0.451 1.178 0.451 1.613 0l10.113-10.113c0.451-0.436 0.451-1.162 0-1.596l-10.113-10.114z"></path>
                             </svg>                             
                             <li>
@@ -55,48 +55,71 @@
             </header>
         </section>
         
-        <section>
-            <h1>Nowości</h1>
-            <div class="newElement">
-                <h2>Zestaw 600 rezystorów - różne wartości</h2>
-                <div class="description">
-                    Rezystor? Kto go nie potrzebuje? Umówmy się - i tak byś go kupił. Dlaczego więc nie zrobić tego teraz, gdy możesz nabyć je taniej?
-                </div>                
-            </div>
-            <div class="newElement">
-                <h2>Arduino UNO R3</h2>
-                <div class="description">
-                    Klon? Można, ale po co? Tylko w tym tygodniu dostaniesz oryginalny, kultowy mikrokontroller Arduino w cenie, której nie powstydziłby się niejeden Chińczyk! 
-                </div>
-            </div>
-            <div class="newElement">
-                <h2>Rejestr przesuwny 74HC595</h2>
-                <div class="description">
-                    Za mało pinów? Od dzisiaj to nie problem! Skończ z kompromisami i zaprogramuj wszystkie diody jakie tylko masz pod ręką! 
-                </div>
-            </div>
-        </section>
+        <section class="deals">
 
-        <section>
+            <h1>Nowości</h1>
+            <div class="newstuff">
+                <div class="newElement">
+                    <div class="view"><img src="photos/nowosci/pir.jpg"></div>
+                    <h2>Czujnik ruchu</h2>
+                    <div class="description">
+                        Jeśli brakuje Ci pomysłu na ciekawy projekt, na pewno znajdziesz tysiąc sposobów na wykorzystanie czujnika ruchu. Od dziś w naszym sklepie!
+                    </div>
+                    <div class="price">5,99</div>  
+                    <button type="submit">Dodaj do koszyka</button>              
+                </div>
+                <div class="newElement">
+                    <div class="view"><img src="photos/nowosci/multimetr.jpg"></div>
+                    <div class="view"></div>
+                    <h2>Multimetr cyfrowy uniwersalny</h2>
+                    <div class="description">
+                        Ujmijmy to tak - jeśli go nie masz, nie powinieneś zaczynać zabawy z elektroniką. Na co więc jeszcze czekasz? Kup go! 
+                    </div>
+                    <div class="price">99,99</div>
+                    <button type="submit">Dodaj do koszyka</button>
+                </div>
+                <div class="newElement">
+                    <div class="view"><img src="photos/nowosci/oscyloskop.jpg"></div>
+                    <h2>Oscyloskop cyfrowy</h2>
+                    <div class="description">
+                        Multimetrem możemy bawić się w nieskończoność, ale to oscyloskop jest narzędziem, które pozwoli Ci na doglębną analizę obwodu. W tej cenie lepszego nie kupisz!
+                    </div>
+                    <div class="price">889,99</div>
+                    <button type="submit">Dodaj do koszyka</button>
+                </div>
+            </div>            
+            
             <h1>Promocje</h1>
             <div class="discount">
-                <div class="newElement">
+                <div class="discountElement">
+                    <div class="view"><img src="photos/promocje/rezystory.jpg"></div>
                     <h2>Zestaw 600 rezystorów - różne wartości</h2>
                     <div class="description">
                         Rezystor? Kto go nie potrzebuje? Umówmy się - i tak byś go kupił. Dlaczego więc nie zrobić tego teraz, gdy możesz nabyć je taniej?
                     </div>
+                    <div class="oldPrice">12,90</div>
+                    <div class="price">6,49</div>
+                    <button type="submit" value="Dodaj do koszyka">Dodaj do koszyka</button>
                 </div>
-                <div class="newElement">
+                <div class="discountElement">
+                    <div class="view"><img src="photos/promocje/arduino.jpg"></div>
                     <h2>Arduino UNO R3</h2>
                     <div class="description">
                         Klon? Można, ale po co? Tylko w tym tygodniu dostaniesz oryginalny, kultowy mikrokontroller Arduino w cenie, której nie powstydziłby się niejeden Chińczyk! 
                     </div>
+                    <div class="oldPrice">85,49</div>
+                    <div class="price">33,00</div>
+                    <button type="submit" >Dodaj do koszyka</button>
                 </div>
-                <div class="newElement">
-                    <h2>Rejestr przesuwny 74HC595</h2>
+                <div class="discountElement">
+                    <div class="view"><img src="photos/promocje/74HC595.jpg"></div>
+                    <h2>Rejestr przesuwny 74HC595 - 10 sztuk</h2>
                     <div class="description">
                         Za mało pinów? Od dzisiaj to nie problem! Skończ z kompromisami i zaprogramuj wszystkie diody jakie tylko masz pod ręką! 
                     </div>
+                    <div class="oldPrice">10,99</div>
+                    <div class="price">5,49</div>
+                    <button type="submit">Dodaj do koszyka</button>
                 </div> 
             </div>
         </section>
