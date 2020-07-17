@@ -1,0 +1,30 @@
+body {
+    background-color: #e6dcdd;
+    width: 80%;
+    margin:auto
+}
+
+header
+{
+    background-color: #333139;
+    padding: 1.5em;
+    color: #e6dcdd;
+}
+
+nav .menu a, li {
+    display: inline-block;
+    padding: 1em;
+}
+
+.menu > svg {
+    width: 1em;
+}
+
+.dropdownItem {
+    display: none;
+}
+
+.dropdown:hover .dropdownItem {
+    position: sticky;
+    display:block;
+}
