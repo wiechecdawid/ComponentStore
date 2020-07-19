@@ -73,7 +73,7 @@ function addToCart(event) {
         remove.addEventListener('click', removeCartItem);
         purchase.appendChild(remove);
 
-        // updateCartTotal();
+        updateCartTotal();
         // saveAllCartItems();
 }
 
