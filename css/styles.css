@@ -4,15 +4,6 @@ body {
     margin:auto
 }
 
-button {
-    height: 2em;
-    background-color: #4eff4e;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-color: #65c565;
-}
 
 header {
     background-color: #555f4a;
@@ -20,6 +11,17 @@ header {
     color: #e6dcdd;
     border-radius: 0px 0px 25px 25px;
     text-decoration: none;
+}
+
+.add {
+    height: 2em;
+    background-color: #4eff4e;
+    border-radius: 10px;
+}
+
+.add:hover {
+    background-color: #65c565;
+    cursor: pointer;
 }
 
 .cart {
@@ -31,8 +33,13 @@ header {
     padding: 5px;
 }
 
-.item {
+.itemName {
     display: inline-block;
+}
+
+.quantity {
+    display: inline-block;
+    width: 30px;
 }
 
 .remove {
