@@ -4,12 +4,42 @@ body {
     margin:auto
 }
 
+button {
+    height: 2em;
+    background-color: #4eff4e;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #65c565;
+}
+
 header {
     background-color: #555f4a;
     padding: 1.5em;
     color: #e6dcdd;
     border-radius: 0px 0px 25px 25px;
     text-decoration: none;
+}
+
+.cart {
+    float: left;
+}
+
+.purchase {
+    border: 2px solid grey;
+    padding: 5px;
+}
+
+.item {
+    display: inline-block;
+}
+
+.remove {
+    display: inline-block;
+    font-size: 0.7em;
+    color: grey;
+    cursor: pointer;
 }
 
 .logo {
@@ -29,7 +59,8 @@ header {
 
 nav .menu a, li {
     display: inline-block;
-    padding: 1em;
+    padding: 1em;    
+    font-family: 'Pacifico', cursive;
     color: #ebebeb;
     text-decoration: none;
 }
@@ -49,6 +80,10 @@ nav .menu a, li {
     position: absolute;
 }
 
+.deals {
+    font-family: 'Noto Serif', serif;
+}
+
 .deals > h1 {
     display: block;
     text-align: center;
@@ -57,7 +92,16 @@ nav .menu a, li {
 
 .deals > div {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.newElement, .discountElement {   
+    flex-grow: 1; 
+    padding: 20px;
+    margin: 10px;
+    border: 5px double;
+    border-radius: 25px;
 }
 
 .oldPrice {
@@ -66,6 +110,8 @@ nav .menu a, li {
     text-decoration: line-through;
 }
 .price {
+    display: inline-block;
+    margin: 5px 0px;
     color: green;
 }
 
@@ -74,7 +120,8 @@ nav .menu a, li {
     margin: auto;
 }
 
-.view img {
+.view img, video {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 25px;
 }

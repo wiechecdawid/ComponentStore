@@ -4,9 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Componentstore</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" async></script>
     </head>
-    <body>
+    <body onload="showAllItems()">
+
+        <aside class="cart">
+
+        </aside>
+
         <section class="navigation">
             <header>
                 <div class="logo">ComponentStore</div>
@@ -54,6 +62,22 @@
                 </nav>
             </header>
         </section>
+
+        <aside class="cart">
+            <h3>Twój koszyk</h3>
+            <div class="items">
+                <div class="purchase">
+                    <div class="item">Wybierz towar ze sklepu...</div>
+                    <div class="price">0,00</div>
+                    <input type="number" class="quantity" value="1" min="1" max="10" >
+                    <div class="remove">&times;</div>
+                </div>
+            </div>
+            <div class="cartSummary">
+                <p>Razem: </p>
+                <div class="total">0,00</div>
+            </div>
+        </aside>
         
         <section class="deals">
 
@@ -66,7 +90,7 @@
                         Jeśli brakuje Ci pomysłu na ciekawy projekt, na pewno znajdziesz tysiąc sposobów na wykorzystanie czujnika ruchu. Od dziś w naszym sklepie!
                     </div>
                     <div class="price">5,99</div>  
-                    <button type="submit">Dodaj do koszyka</button>              
+                    <button type="submit" class="add">Dodaj do koszyka</button>              
                 </div>
                 <div class="newElement">
                     <div class="view"><img src="photos/nowosci/multimetr.jpg"></div>
@@ -76,7 +100,7 @@
                         Ujmijmy to tak - jeśli go nie masz, nie powinieneś zaczynać zabawy z elektroniką. Na co więc jeszcze czekasz? Kup go! 
                     </div>
                     <div class="price">99,99</div>
-                    <button type="submit">Dodaj do koszyka</button>
+                    <button type="submit" class="add">Dodaj do koszyka</button>
                 </div>
                 <div class="newElement">
                     <div class="view"><img src="photos/nowosci/oscyloskop.jpg"></div>
@@ -85,7 +109,7 @@
                         Multimetrem możemy bawić się w nieskończoność, ale to oscyloskop jest narzędziem, które pozwoli Ci na doglębną analizę obwodu. W tej cenie lepszego nie kupisz!
                     </div>
                     <div class="price">889,99</div>
-                    <button type="submit">Dodaj do koszyka</button>
+                    <button type="submit" class="add">Dodaj do koszyka</button>
                 </div>
             </div>            
             
@@ -99,7 +123,7 @@
                     </div>
                     <div class="oldPrice">12,90</div>
                     <div class="price">6,49</div>
-                    <button type="submit" value="Dodaj do koszyka">Dodaj do koszyka</button>
+                    <button type="submit" class="add">Dodaj do koszyka</button>
                 </div>
                 <div class="discountElement">
                     <div class="view"><img src="photos/promocje/arduino.jpg"></div>
@@ -109,7 +133,7 @@
                     </div>
                     <div class="oldPrice">85,49</div>
                     <div class="price">33,00</div>
-                    <button type="submit" >Dodaj do koszyka</button>
+                    <button type="submit" class="add">Dodaj do koszyka</button>
                 </div>
                 <div class="discountElement">
                     <div class="view"><img src="photos/promocje/74HC595.jpg"></div>
@@ -119,7 +143,7 @@
                     </div>
                     <div class="oldPrice">10,99</div>
                     <div class="price">5,49</div>
-                    <button type="submit">Dodaj do koszyka</button>
+                    <button type="submit" class="add">Dodaj do koszyka</button>
                 </div> 
             </div>
         </section>
