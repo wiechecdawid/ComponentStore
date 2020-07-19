@@ -14,7 +14,7 @@ function ready() {
     buyButton.addEventListener('click', () => {
         let items = document.getElementsByClassName('items')[0];
 
-        if(items.hasChildNodes){
+        if(items.childElementCount > 0){
             window.alert('Dziękujemy za zakupy i zapraszamy ponownie!');
             items.innerHTML = '';
             updateCartTotal();
