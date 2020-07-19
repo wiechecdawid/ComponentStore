@@ -9,12 +9,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/script.js" async></script>
     </head>
-    <body onload="showAllItems()">
-
-        <aside class="cart">
-
-        </aside>
-
+    <body>
         <section class="navigation">
             <header>
                 <div class="logo">ComponentStore</div>
@@ -63,7 +58,7 @@
             </header>
         </section>
 
-        <aside class="cart">
+        <aside class="cart" onload="showAllItems()">
             <h3>Twój koszyk</h3>
             <div class="items">
                 <!-- <div class="purchase">

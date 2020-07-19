@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" async></script>
     </head>
     <body>
         <section class="navigation">
@@ -55,6 +56,67 @@
                     </ul>
                 </nav>
             </header>
+        </section>
+
+        <aside class="cart" onload="showAllItems()">
+            <h3>Twój koszyk</h3>
+            <div class="items">
+                <!-- <div class="purchase">
+                    <div class="itemName">Wybierz towar ze sklepu...</div>
+                    <div class="price">2,49</div>
+                    <input type="number" class="quantity" value="1" min="1" max="10" >
+                    <div class="remove">&times;</div>
+                </div> -->
+            </div>
+            <div class="cartSummary">
+                <p>Razem: </p>
+                <div class="total">0,00</div>
+            </div>
+        </aside>
+
+        <section class="offerings">            
+            <div class="newElement">
+                <h2>Timer 555</h2>
+                <div class="view">
+                    <img src="photos/ukladyScalone/555.jpg">
+                </div>
+                <div class="description">
+                    Prawdopodobnie najpopularniejszy układ w historii elektroniki. Kup i podłącz go w jednym z trzech dostępnych trybów. 
+                </div>
+                <div class="price">
+                    1,50
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>556</h2>
+                <div class="view">
+                    <img src="photos/ukladyScalone/556-IC.jpg">
+                </div>
+                <div class="description">
+                    Co jest lepsze od timera 555? Tak, tak, dwa timery 555, czyli... jeden timer 556. Jeszcze więcej pinów - jeszcze więcej możliwości.
+                </div>
+                <div class="price">
+                    2,56
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>Wzmacniacz operacyjny</h2>
+                <div class="view">
+                    <img src="photos/ukladyScalone/us-lm324-wzmacniacz-operacyjny-dip14.jpg">
+                </div>
+                <div class="description">
+                    Wzmacniaj i odwracaj napięcie. Kiedy chcesz. Jak chcesz. Bez żadnych kompromisów. Albo z...
+                </div>
+                <div class="price">
+                    3,69
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
         </section>
     </body>
 </html>

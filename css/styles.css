@@ -91,6 +91,13 @@ nav .menu a, li {
     font-family: 'Noto Serif', serif;
 }
 
+.offerings {    
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .deals > h1 {
     display: block;
     text-align: center;

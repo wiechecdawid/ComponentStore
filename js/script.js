@@ -15,12 +15,19 @@ function ready() {
         let input = quantityInputs[i];
         input.addEventListener('change', updateCartTotal);
     }
+
+    //showAllItems();
+
+    if(document.getElementsByClassName('purchase') != null) {
+        updateCartTotal();
+    }
 }
 
 function removeCartItem (event) {
     let buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     console.log('One item removed from the cart.');
+   // saveAllCartItems();
     updateCartTotal();
 }
 
@@ -66,7 +73,8 @@ function addToCart(event) {
         remove.addEventListener('click', removeCartItem);
         purchase.appendChild(remove);
 
-        updateCartTotal();
+        // updateCartTotal();
+        // saveAllCartItems();
 }
 
 function updateCartTotal() {
@@ -85,21 +93,15 @@ function updateCartTotal() {
     document.getElementsByClassName('total')[0].innerText = ((Math.round(sum*100)/100).toFixed(2)).toString().replace('.',',');
 }
 
-function checkBrowser() {
-    if(localStorage in window && window['localStorage'] !== null) {
-        return true;
-    } else {
-        return false;
-    }
-}
+// function saveAllCartItems() {
+//     let items = document.getElementsByClassName('items')[0];
+//     localStorage.setItem('items', items.innerHTML);
+// }
 
-function showAllItems() {
-    if(checkBrowser()){
-        var key = "";
-        var list = "";
-        
-        for(let i = 0; i < localStorage.length; i++) {
-            key = localStorage.key(i);
-        }
-    }
-}
+// function showAllItems() {
+//     let items = document.getElementsByClassName('items')[0];
+//     let savedItems = localStorage.getItem('items');
+//     if(savedItems != null) {
+//         items.innerHTML = savedItems;
+//     }
+// }

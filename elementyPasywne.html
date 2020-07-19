@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" async></script>
     </head>
     <body>
         <section class="navigation">
@@ -55,6 +56,95 @@
                     </ul>
                 </nav>
             </header>
+        </section>
+
+        <aside class="cart" onload="showAllItems()">
+            <h3>Twój koszyk</h3>
+            <div class="items">
+                <!-- <div class="purchase">
+                    <div class="itemName">Wybierz towar ze sklepu...</div>
+                    <div class="price">2,49</div>
+                    <input type="number" class="quantity" value="1" min="1" max="10" >
+                    <div class="remove">&times;</div>
+                </div> -->
+            </div>
+            <div class="cartSummary">
+                <p>Razem: </p>
+                <div class="total">0,00</div>
+            </div>
+        </aside>
+
+        <section class="offerings">            
+            <div class="newElement">
+                <h2>Diody prostownicze - 20 sztuk</h2>
+                <div class="view">
+                    <img src="photos/elementyPasywne/diodyProst.jpg">
+                </div>
+                <div class="description">
+                    Jeden z podstawowych komponentów elektronicznych. Przewodzi prąd w jedną stronę, zatrzymuje go w drugą.
+                </div>
+                <div class="price">
+                    6,39
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>Diody LED - różne kolory, 100 sztuk</h2>
+                <div class="view">
+                    <img src="photos/elementyPasywne/diody.jpg">
+                </div>
+                <div class="description">
+                    Twoja dioda nie świeci? Być może dlatego, że nie jest diodą LED? Kup teraz 100 sztuk i rzuć trochę światła na swoje projekty!
+                </div>
+                <div class="price">
+                    9,99
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>Kondensatory elektrolityczne - różne wartości, 100 sztuk</h2>
+                <div class="view">
+                    <img src="photos/elementyPasywne/kondensatory.jpg">
+                </div>
+                <div class="description">
+                    Pewnie mógłbyś wylutować je z niejednego urządzenia elektronicznego, a jednak zawsze warto mieć w odwodzie kilka na czarną godzinę. A może kilkaset... 
+                </div>
+                <div class="price">
+                    8,99
+                </div>
+                <div class="price"></div>
+                <button type="submit">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>Dławiki - 10 sztuk</h2>
+                <div class="view">
+                    <img src="photos/elementyPasywne/dlawik.jpg">
+                </div>
+                <div class="description">
+                    Element pasywny, służący do filtrowania napięcia. Że drut nawinięty na rdzeń? Cóż, to też trzeba umieć wykonać, a tak się składa, że nasze wykonane są świetnie.
+                </div>
+                <div class="price">
+                    3,69
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
+            <div class="newElement">
+                <h2>Stabilizator napięcia 5V - 10 sztuk</h2>
+                <div class="view">
+                    <img src="photos/elementyPasywne/L7805CV.jpg">
+                </div>
+                <div class="description">
+                    Szczególnie przydatny, jeśli budujesz własne źródło napięcia. Polecamy w komplecie z dławikami, kondensatorami oraz diodami.
+                </div>
+                <div class="price">
+                    5,50
+                </div>
+                <div class="price"></div>
+                <button type="submit" class="add">Dodaj do koszyka</button>
+            </div>
         </section>
     </body>
 </html>
