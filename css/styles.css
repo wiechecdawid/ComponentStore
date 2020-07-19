@@ -22,6 +22,19 @@ header {
 .add:hover {
     background-color: #65c565;
     cursor: pointer;
+    color: grey;
+}
+
+.buy {
+    height: 3em;
+    background-color: #4eff4e;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.buy:hover {
+    background-color: #65c565;
+    cursor: pointer;
+    color: grey;
 }
 
 .cart {

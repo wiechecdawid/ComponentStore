@@ -9,6 +9,19 @@ function ready() {
     for(let i = 0; i < removeButtons.length; i++) {
         removeButtons[i].addEventListener('click', removeCartItem);
     }
+
+    var buyButton = document.getElementsByClassName('buy')[0];
+    buyButton.addEventListener('click', () => {
+        let items = document.getElementsByClassName('items')[0];
+
+        if(items.hasChildNodes){
+            window.alert('Dziękujemy za zakupy i zapraszamy ponownie!');
+            items.innerHTML = '';
+            updateCartTotal();
+        }else {
+            window.alert('Jeszcze niczego nie wybrałeś...')
+        }
+    })
     
     var quantityInputs = document.getElementsByClassName('quantity');
     for(let i = 0; i < quantityInputs.length; i++) {
